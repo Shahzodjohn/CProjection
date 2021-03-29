@@ -1,0 +1,20 @@
+﻿@model CrudProjection.Models.Odam
+@{
+    ViewBag.Title = Model.FirstName;
+}
+<h2>Пользователь @Model.FirstName</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dt class="table table-danger">Идентификатор</dt>
+        <dd>@Model.Id</dd>
+
+        <dt class="table table-danger" >FirstName</dt>
+        <dd>@Model.FirstName</dd>
+
+        <dt class="table">LastName</dt>
+        <dd>@Model.LastName</dd>
+
+        <dt class="table">MiddleName</dt>
+        <dd>@Model.MiddleName</dd>
+    </dl>
+</div>

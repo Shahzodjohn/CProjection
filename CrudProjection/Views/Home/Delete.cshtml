@@ -1,0 +1,29 @@
+﻿@model CrudProjection.Models.Odam
+@{
+    ViewBag.Title = "Удаление пользователя";
+}
+<div>
+    <dl class="dl-horizontal">
+        <dt>FirstName</dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>LastName</dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>MiddleName</dt>
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+    </dl>
+    <div>
+        <form asp-controller="Home" asp-action="Delete" method="post">
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" value="Удалить" />          
+            </div>
+        </form>
+    </div>
+</div>
